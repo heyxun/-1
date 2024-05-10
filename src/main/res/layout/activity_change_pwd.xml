@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".changePwd">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名："
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"></TextView>
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_username"
+            android:layout_centerVertical="true"
+            android:hint="请输入用户名"></EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原密码："
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"></TextView>
+
+        <EditText
+            android:id="@+id/etUrPwd"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_toRightOf="@+id/tv_pwd"
+            android:layout_centerVertical="true"
+            android:hint="请输入原密码"
+            android:maxLength="25"></EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_new_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新密码："
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"></TextView>
+
+        <EditText
+            android:id="@+id/etNewPwd"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_toRightOf="@+id/tv_new_pwd"
+            android:layout_centerVertical="true"
+            android:hint="请输入新密码"
+            android:maxLength="25"></EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvnp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认新密码："
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"></TextView>
+
+        <EditText
+            android:id="@+id/etNewPwdAgain"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_toRightOf="@+id/tvnp"
+            android:layout_centerVertical="true"
+            android:hint="请确认新密码"
+            android:maxLength="25"></EditText>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"></Button>
+    </LinearLayout>
+</LinearLayout>
